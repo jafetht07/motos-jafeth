@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap'); /* Importar fuente Roboto */
+
+body {
+    font-family: 'Roboto', sans-serif; /* Cambiar a la fuente Roboto */
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to right, #ff7e5f, #feb47b); /* Degradado colorido */
+    background-image: url('background-pattern.png'); /* Imagen de fondo sutil (puedes reemplazarla con una URL válida) */
+    background-size: cover; /* Cubrir toda la pantalla */
+}
+
+header {
+    background-color: rgba(2, 6, 49, 0.9); /* Fondo oscuro semi-transparente */
+    color: rgb(247, 236, 236);
+    text-align: center;
+    padding: 20px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3); /* Sombra suave */
+    animation: slideDown 0.5s ease; /* Animación de deslizamiento */
+}
+
+@keyframes slideDown {
+    from {
+        transform: translateY(-20px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+h1 {
+    margin: 0;
+    font-size: 2.5em; /* Tamaño de fuente más grande */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* Sombra en el texto */
+}
+
+.motos {
+    padding: 20px;
+    text-align: center;
+}
+
+.moto-item {
+    background-color: #2ed573; /* Color verde vibrante para el fondo de la tarjeta */
+    border: 2px solid #130047; /* Borde oscuro */
+    padding: 20px;
+    margin: 20px; /* Añadir espacio alrededor */
+    display: inline-block;
+    width: 300px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Sombra más intensa */
+    border-radius: 10px; /* Bordes redondeados */
+    transition: transform 0.3s; /* Animación suave al pasar el mouse */
+    animation: fadeIn 0.5s ease; /* Animación al cargar */
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.moto-item:hover {
+    transform: translateY(-5px); /* Elevar la tarjeta al pasar el mouse */
+}
+
+.moto-item h3 {
+    margin-top: 0;
+    color: #020631; /* Color de texto del título */
+}
+
+button {
+    background-color: #ff4757; /* Rojo vibrante */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    margin-top: 10px;
+    border-radius: 5px; /* Bordes redondeados */
+    transition: background-color 0.3s, transform 0.2s, box-shadow 0.2s; /* Animación suave */
+    position: relative; /* Para el efecto de parpadeo */
+    animation: blink 1s infinite; /* Efecto de parpadeo */
+}
+
+@keyframes blink {
+    0%, 100% {
+        box-shadow: 0 0 0 transparent; /* Sin sombra */
+    }
+    50% {
+        box-shadow: 0 0 10px rgba(255, 71, 87, 0.7); /* Sombra visible */
+    }
+}
+
+button:hover {
+    background-color: #e84118; /* Rojo oscuro */
+    transform: scale(1.05); /* Aumentar tamaño al pasar el mouse */
+}
+
+footer {
+    background-color: #333; /* Fondo oscuro para el pie */
+    color: rgb(238, 232, 232); /* Color de texto claro */
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+.moto-image {
+    width: 100%;  /* Ajusta el ancho al contenedor */
+    height: auto; /* Mantiene la proporción de la imagen */
+    border-radius: 10px; /* Esquinas más redondeadas */
+    margin-bottom: 10px; /* Espaciado debajo de la imagen */
+    border: 2px solid #130047; /* Borde alrededor de la imagen */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Sombra alrededor de la imagen */
+}
+
+/* Agregar estilos adicionales para mejorar la apariencia */
+.moto-item:hover {
+    background-color: #32ff7e; /* Color verde más claro al pasar el mouse */
+    border-color: #ff4757; /* Cambiar el color del borde al pasar el mouse */
+}
+
+h3 {
+    font-size: 1.8em; /* Tamaño de fuente más grande para los títulos de las motos */
+    color: #2f3542; /* Color de texto para los títulos */
+}
